@@ -1,0 +1,118 @@
+body {
+  background-color: #d9e3e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 25px 25px 25px 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.form-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #304052;
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.survey-form input,
+.survey-form textarea
+{
+  width: 92%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+.survey-form select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: 0.3s ease-in-out;
+  color: #666; /* Ensuring uniform color */
+  appearance: none; /* Removes default browser styling */
+  background-color: white; /* Ensures background consistency */
+  text-align: left; /* Aligns text */
+}
+
+.survey-form select option:first-child {
+  color: #999; /* Match placeholder color */
+}
+.survey-form textarea {
+  height: 46px;
+  resize: none;
+}
+
+.survey-form select {
+  cursor: pointer;
+  height: 46px;
+  
+}
+
+.survey-form input:focus,
+.survey-form textarea:focus,
+.survey-form select:focus,
+.survey-form select:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.survey-form input::placeholder,
+.survey-form textarea::placeholder {
+  color: #999;
+}
+
+.survey-form button {
+  width: 100%;
+  
+  background: #304052;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.survey-form button:hover {
+  background: #233346;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .form-container {
+      width: 90%;
+  }
+}
+.survey-form input::placeholder,
+.survey-form textarea::placeholder,
+.survey-form select {
+  color: #666; /* Ensuring the same placeholder text color */
+  font-size: 16px;
+}
